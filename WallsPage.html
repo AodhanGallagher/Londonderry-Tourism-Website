@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" manifest="Coursework2.appcache">
+  <head>
+	   <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!-- Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+     <script src="Coursework2.js"></script>
+
+     <link href="Coursework2.css" type="text/css" rel="stylesheet" />
+
+     <meta name="description" content="A page with details about Derry's walls - Historic walls that surround the city centre">
+	   <meta name="keywords" content="Walls">
+	   <meta name="author" content="Aodhan Gallagher">
+
+     <title>Landmarks of Derry</title>
+   </head>
+   <body>
+
+     <!-- Navigation Bar -->
+     <nav class="navbar pb-0 navbar-expand-lg bg-light navbar-light border-bottom border-danger border-3 fixed-top">
+       <div class="container">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-1 pb-2 align-self-center">
+               <a class="navbar-brand" href="HomePage.html">
+                 <img id="logoImage" src="Media/Logo.png" alt="Derry's Coat of Arms">
+               </a>
+             </div>
+             <div class="col-4 ms-5 pb-2 align-self-end">
+               <a class="text-decoration-none" href="HomePage.html">
+               <h2 id="titleHeader">Landmarks of Derry</h2>
+               </a>
+             </div>
+             <div class="col ps-5 pb-2 align-self-center">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+             </div>
+             <div class="col-5 me-5 ps-0 d-flex flex-fill align-self-end">
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='HomePage.html'">Home</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="clickedButton" onclick="document.location='WallsPage.html'">City Walls</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='PeaceBridgePage.html'">Peace Bridge</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='AustinsPage.html'">Austins</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='GuildhallPage.html'">Guildhall</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='FAQPage.html'">FAQs</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='ContactUsPage.html'">Contact Us</button>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </nav>
+
+     <!-- Conatiner with the page's content -->
+     <section class="container-lg bg-white g-0 shadow">
+       <div class="row">
+         <div class="col">
+           <img src="Media/walls.jpg" class="img-fluid" alt="A photo showing a section of Derry's walls">
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col pt-2 px-1">
+           <h3 class="text-center">The City Walls</h3>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col pt-2 ps-5 pe-5">
+           <p class="text-center">
+             The historic Derry walls were first built between 1613 and 1619, and their original purpose was to protect Scottish and English
+             planters that had moved to Ulster at the time.
+             The walls have survived a number of conflicts, most notably, The Siege of Derry and The Troubles. During these times of crisis,
+             the Apprentice Boys (A Protestant fraternal society) would close the gates to the city,
+             which consisted of:
+           </p>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col">
+           <ul class="text-center">
+             <li>Ferryquay Gate</li>
+             <li>Shipquay Gate</li>
+             <li>Bishop's Gate</li>
+             <li>Butcher's Gate</li>
+             <li>New Gate</li>
+             <li>Castle Gate</li>
+             <li>Magazine Gate</li>
+           </ul>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col ps-5 pe-5">
+           <p class="text-center">
+             The walls are approximately 1 mile in circumference and are entirely accessible on foot. The walls also house a variety of 22 cannons from the 16<sup>th</sup>,
+             17<sup>th</sup> and the 18<sup>th</sup> century, as well as boasting incredible views over the city.
+             This is a must see landmark for any visitor in Derry!
+           </p>
+         </div>
+       </div>
+     </section>
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+     <script src="ScrollToTop.js"></script>
+
+  </body>
+</html>

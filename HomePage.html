@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" manifest="Coursework2.appcache">
+  <head>
+	   <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!-- Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+     <script src="Coursework2.js"></script>
+
+     <link href="Coursework2.css" type="text/css" rel="stylesheet" />
+
+	   <meta name="description" content="The main page and introduction to the website">
+	   <meta name="keywords" content="Derry, Landmarks, Welcome">
+	   <meta name="author" content="Aodhan Gallagher">
+
+     <title>Landmarks of Derry</title>
+   </head>
+   <body>
+
+     <!-- Navigation Bar -->
+     <nav class="navbar pb-0 navbar-expand-lg bg-light navbar-light border-bottom border-danger border-3 fixed-top">
+       <div class="container">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-1 pb-2 align-self-center">
+               <a class="navbar-brand" href="HomePage.html">
+                 <img id="logoImage" src="Media/Logo.png" alt="Derry's Coat of Arms">
+               </a>
+             </div>
+             <div class="col-4 ms-5 pb-2 align-self-end">
+               <a class="text-decoration-none" href="HomePage.html">
+               <h2 id="titleHeader">Landmarks of Derry</h2>
+               </a>
+             </div>
+             <div class="col ps-5 pb-2 align-self-center">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+             </div>
+             <div class="col-5 me-5 ps-0 d-flex flex-fill align-self-end">
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <button class="clickedButton" onclick="document.location='HomePage.html'">Home</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='WallsPage.html'">City Walls</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='PeaceBridgePage.html'">Peace Bridge</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='AustinsPage.html'">Austins</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='GuildhallPage.html'">Guildhall</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='FAQPage.html'">FAQs</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='ContactUsPage.html'">Contact Us</button>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </nav>
+
+
+
+     <!-- Conatiner with the page's content -->
+     <section class="container-lg bg-white g-0 shadow">
+       <div class="row">
+         <div class="col">
+           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Media/CoverPhoto1.jpg" class="d-block w-100" alt="Photo overlooking Derry's Guildhall from the Peace Bridge">
+                </div>
+                <div class="carousel-item">
+                  <img src="Media/CoverPhoto3.jpg" class="d-block w-100" alt="Photo of a boat from the clipper festival passing under a bridge">
+                </div>
+                <div class="carousel-item">
+                  <img src="Media/CoverPhoto2.jpg" class="d-block w-100" alt="Photo of all the boats from the clipper festival aligned along Derry's quay">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+         </div>
+       </div>
+
+       <div class="row justify-content-center pt-4">
+         <div class="col-10">
+           <h3 class="text-center" id="mainTitle">Welcome to the City of Derry</h3>
+           <br />
+           <p class="text-center">
+             A city steeped in history, Derry has a lot to offer. From being the only remaining completely walled city in Ireland
+             to being the UK's first City of Culture in 2013, there's plenty to see and do.
+           </p>
+           <p class="text-center">
+             Below are some of the main landmarks that highlight Derry's rich history and are really worth a visit!
+           </p>
+         </div>
+       </div>
+
+       <div class="row justify-content-center g-1 ps-5 pe-4 pb-4 pt-4">
+         <div class="col col-xl-3 ms-4 ms-lg-0 ps-2 ps-lg-0 pb-2">
+           <a href="WallsPage.html" class="text-reset text-decoration-none">
+             <div class="card box-shadow" style="width: 18rem;">
+              <img src="Media/wallsMain.JPG" class="card-img-top" alt="A photo of a cannon on the walls, overlooking the city">
+              <div class="card-body">
+                <h5 class="card-title">The City Walls</h5>
+                <p class="card-text">The Derry Walls define the old town quarter at the heart of the modern city. Within these walls is a network of streets, full of character and charm.</p>
+              </div>
+            </div>
+           </a>
+         </div>
+
+         <div class="col col-xl-3 ms-4 ms-lg-0 ps-2 ps-lg-0 pb-2">
+           <a href="PeaceBridgePage.html" class="text-reset text-decoration-none">
+             <div class="card box-shadow" style="width: 18rem;">
+              <img src="Media/peaceBridgeMain.jpg" class="card-img-top" alt="A photo of Derry's Peace Bridge, overlooking the cityside">
+              <div class="card-body">
+                <h5 class="card-title">The Peace Bridge</h5>
+                <p class="card-text">The Derry Peace Bridge over the River Foyle bridges a 400 year old physical and political gap between two sides of a once, bitterly divided community.</p>
+              </div>
+            </div>
+           </a>
+         </div>
+
+         <div class="col col-xl-3 ms-4 ms-lg-0 ps-2 ps-lg-0 pb-2">
+           <a href="AustinsPage.html" class="text-reset text-decoration-none">
+             <div class="card box-shadow" style="width: 18rem;">
+              <img src="Media/austinsMain.jpg" class="card-img-top" alt="A photo of Austins Department Store (Modern Day)" style="height: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title">Austins</h5>
+                <p class="card-text">The world's oldest independant department store. It survived the great Irish famine, two world wars, the partition of the island and the Ulster Troubles.</p>
+              </div>
+            </div>
+           </a>
+         </div>
+
+         <div class="col col-xl-3 ms-4 ms-lg-0 ps-2 ps-lg-0">
+           <a href="GuildhallPage.html" class="text-reset text-decoration-none">
+             <div class="card box-shadow" style="width: 18rem;">
+              <img src="Media/guildhallMain.jpg" class="card-img-top" alt="A photo of the Guildhall's west side" style="height: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title">The Guildhall</h5>
+                <p class="card-text">A warm welcome awaits you at the Guildhall, one of Derrys most recognisable landmarks that has been at the heart of city life since 1890.</p>
+              </div>
+            </div>
+           </a>
+         </div>
+       </div>
+     </section>
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+     <script src="ScrollToTop.js"></script>
+
+  </body>
+</html>

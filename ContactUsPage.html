@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" manifest="Coursework2.appcache">
+  <head>
+	   <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!-- Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+     <script src="Coursework2.js"></script>
+
+     <link href="Coursework2.css" type="text/css" rel="stylesheet" />
+
+	   <meta name="description" content="A page with contact details as well as a form for submitting any enquiries">
+	   <meta name="keywords" content="Contact, Form">
+	   <meta name="author" content="Aodhan Gallagher">
+
+     <title>Landmarks of Derry</title>
+   </head>
+   <body>
+
+     <!-- Navigation Bar -->
+     <nav class="navbar pb-0 navbar-expand-lg bg-light navbar-light border-bottom border-danger border-3 fixed-top">
+       <div class="container">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-1 pb-2 align-self-center">
+               <a class="navbar-brand" href="HomePage.html">
+                 <img id="logoImage" src="Media/Logo.png" alt="Derry's Coat of Arms">
+               </a>
+             </div>
+             <div class="col-4 ms-5 pb-2 align-self-end">
+               <a class="text-decoration-none" href="HomePage.html">
+               <h2 id="titleHeader">Landmarks of Derry</h2>
+               </a>
+             </div>
+             <div class="col ps-5 pb-2 align-self-center">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+             </div>
+             <div class="col-5 me-5 ps-0 d-flex flex-fill align-self-end">
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='HomePage.html'">Home</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='WallsPage.html'">City Walls</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='PeaceBridgePage.html'">Peace Bridge</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='AustinsPage.html'">Austins</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='GuildhallPage.html'">Guildhall</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='FAQPage.html'">FAQs</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="clickedButton" onclick="document.location='ContactUsPage.html'">Contact Us</button>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </nav>
+
+     <!-- Conatiner with the page's content -->
+     <section class="container-lg bg-white shadow">
+       <div class="contact3 py-5">
+         <div class="row">
+           <div class="container">
+             <div class="row">
+               <div class="col-lg-4 d-flex justify-content-center align-items-center ps-lg-4 me-lg-3">
+                 <div class="card-shadow">
+                   <img src="Media/Email.png" style="width: 300px;" class="img-fluid" alt="Large image of an email">
+                 </div>
+               </div>
+
+               <div class="col-lg-7 d-flex justify-content-center px-3">
+                 <div class="contact-box">
+                   <h3 class="mt-2">Contact Us</h3>
+                   <form name="ContactForm" class="mt-4" action="#" onsubmit="return validateForm()" method="post">
+                     <div class="row">
+                       <div class="col-lg-12">
+                         <div class="form-group mt-2">
+                           <input name="fName" class="form-control" type="text" placeholder="Name">
+                         </div>
+                       </div>
+                       <div class="col-lg-12">
+                         <div class="form-group mt-2">
+                           <input name="fEmail" class="form-control" type="email" placeholder="Email Address">
+                         </div>
+                       </div>
+                       <div class="col-lg-12">
+                         <div class="form-group mt-2">
+                           <input name="fPhone" class="form-control" type="tel" placeholder="Phone Number">
+                         </div>
+                       </div>
+                       <div class="col-lg-12">
+                         <div class="form-group mt-2">
+                           <textarea name="fEnquiry" class="form-control" rows="3" placeholder="Enquiry"></textarea>
+                         </div>
+                       </div>
+                       <div class="col-lg-12">
+                         <button type="submit" class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"><span>SUBMIT</span></button>
+                       </div>
+                     </div>
+                   </form>
+                 </div>
+               </div>
+
+               <div class="col-lg-12 d-flex justify-content-center">
+                 <div class="card mt-5 border-0 mb-3">
+                   <div class="row">
+                     <div class="col-lg-4 col-md-4">
+                       <div class="card-body d-flex align-items-center">
+                         <div class="mr-3 align-self-center">
+                           <img src="Media/MapIcon.png" alt="Icon of a map">
+                         </div>
+
+                         <div class="ps-3">
+                           <h6 class="text-decoration-underline fw-bold">Address</h6>
+                           <p>1 Waterloo Pl.
+                             <br>Derry, BT48 6BT</p>
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-4">
+                       <div class="card-body d-flex align-items-center">
+                         <div class="mr-3 align-self-center">
+                           <img src="Media/PhoneIcon.png" alt="Icon of a phone">
+                         </div>
+
+                         <div class="ps-3">
+                           <h6 class="text-decoration-underline fw-bold">Phone</h6>
+                           <p>028 7126 7284
+                             <br>028 7162 9032</p>
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-4">
+                       <div class="card-body d-flex align-items-center">
+                         <div class="mr-3 align-self-center">
+                           <img src="Media/EmailIcon.png" alt="Icon of an email">
+                         </div>
+
+                         <div class="ps-3">
+                           <h6 class="text-decoration-underline fw-bold">Email</h6>
+                           <p>info@derrylandmarks.com
+                             <br>info@visitderry.com</p>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+     <script src="ScrollToTop.js"></script>
+
+  </body>
+</html>

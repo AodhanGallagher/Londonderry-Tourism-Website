@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" manifest="Coursework2.appcache">
+  <head>
+	   <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!-- Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+     <script src="Coursework2.js"></script>
+
+     <link href="Coursework2.css" type="text/css" rel="stylesheet" />
+
+	   <meta name="description" content="An FAQs page with a map showing the geolocation of the user as well as the location of the main tourism office">
+	   <meta name="keywords" content="FAQ, Geolocation, Map">
+	   <meta name="author" content="Aodhan Gallagher">
+
+     <title>Landmarks of Derry</title>
+   </head>
+   <body>
+     <nav class="navbar pb-0 navbar-expand-lg bg-light navbar-light border-bottom border-danger border-3 fixed-top">
+       <div class="container">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-1 pb-2 align-self-center">
+               <a class="navbar-brand" href="HomePage.html">
+                 <img id="logoImage" src="Media/Logo.png" alt="Derry's Coat of Arms">
+               </a>
+             </div>
+             <div class="col-4 ms-5 pb-2 align-self-end">
+               <a class="text-decoration-none" href="HomePage.html">
+               <h2 id="titleHeader">Landmarks of Derry</h2>
+               </a>
+             </div>
+             <div class="col ps-5 pb-2 align-self-center">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+             </div>
+             <div class="col-5 me-5 ps-0 d-flex flex-fill align-self-end">
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='HomePage.html'">Home</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='WallsPage.html'">City Walls</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='PeaceBridgePage.html'">Peace Bridge</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='AustinsPage.html'">Austins</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='GuildhallPage.html'">Guildhall</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="clickedButton" onclick="document.location='FAQPage.html'">FAQs</button>
+                   </li>
+                   <li class="nav-item">
+                     <button class="button" onclick="document.location='ContactUsPage.html'">Contact Us</button>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </nav>
+
+     <section class="container-lg bg-white shadow">
+       <div class="row pt-4">
+         <div class="col">
+           <h3>Frequently Asked Questions</h3>
+         </div>
+       </div>
+
+       <div class="row pb-4 pt-3">
+         <div class="col">
+           <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What currency does Derry use?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Derry and other cities in Northern Ireland uses the pound sterling (£), the currency also in circulation in England, Scotland and Wales.<br />The Republic of Ireland use a different currency, the Euro.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  What is the best time of the year to come to Derry?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Northern Ireland's climate is mild and temperate, with mild winters, very little snow and warm summers.<br />You'll be able to enjoy the best, most clement weather between April and October, although the winters don't get too cold and often the summers can be just as wet!</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Is it easy to travel to Northern Ireland?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Yes!<br />Northern Ireland is geographically compact, with everywhere accessible within a few hours. There are many direct air routes into Northern Ireland from Britain as well as North American and European links.<br />The travel time from Dublin Airport is under three hours and there are several ferry routes from Scotland and the north of England.</div>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <hr class="border-3 border-top border-danger">
+
+       <div class="row pt-3">
+         <div class="col">
+           <h3>Where To Find Our Tourism Office</h3>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col pt-2 pb-3">
+           <div id="map" style="height: 500px"></div>
+           <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+           <script src="map.js"></script>
+         </div>
+       </div>
+     </section>
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+     <script src="ScrollToTop.js"></script>
+
+  </body>
+</html>

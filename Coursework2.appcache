@@ -1,0 +1,30 @@
+CACHE MANIFEST
+ /Coursework2.css
+ /Coursework2.js
+ /AustinsPage.html
+ /GuildhallPage.html
+ /HomePage.html
+ /PeaceBridgePage.html
+ /WallsPage.html
+ /austins.jpg
+ /austinsMain.jpg
+ /CoverPhoto1.jpg
+ /CoverPhoto2.jpg
+ /CoverPhoto3.jpg
+ /Email.png
+ /EmailIcon.png
+ /guildhallMain.jpg
+ /Logo.png
+ /MapIcon.png
+ /PhoneIcon.png
+ /peaceBridge.jpg
+ /peaceBridgeMain.jpg
+ /walls.jpg
+ /wallsMain.JPG
+
+NETWORK:
+FAQPage.html
+ContactUsPage.html
+
+FALLBACK:
+/html/ /Offline.html
